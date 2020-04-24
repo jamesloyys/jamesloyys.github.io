@@ -3,7 +3,7 @@ remote_theme: jamesloyys/flexible-jekyll
 # Author Settings
 author: James Loy # add your name
 author-img: james.jpg # add your photo
-about-author: Data Scientist from Singapore. # add description
+about-author: Data Scientist from Singapore :singapore:	 # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: artemsheludko # add your Github handle
