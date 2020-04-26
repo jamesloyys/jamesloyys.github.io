@@ -25,19 +25,19 @@ tags: [Deep Learning, NLP]
 
 	 	<h2>Seq2Seq Models in NLP</h2>
 
-	 	Neural networks and deep learning have proven to be powerful algorithms for solving a wide range of problems in AI, particularly in Computer Vision based problems such as image recognition. However, one drawback of conventional neural networks is that they require a fix length input. This is no problem for vision based problems, as its inputs are images of fixed dimensions. However, this is a stumbling block in the world of NLP, as problems such as machine translation and speech recognition have variable length inputs that are known a-priori. For example, in machine translation, an AI model has to be able to translate sentences of any length - this does not fit well with the fix length input requirement of conventional neural networks.
+	 	Neural networks and deep learning have proven to be powerful algorithms for solving a wide range of problems in AI, particularly in Computer Vision based problems such as image recognition. However, one drawback of conventional neural networks is that they require a fix length input. This is no problem for vision based problems, as its inputs are images of fixed dimensions. However, this is a stumbling block in the world of NLP, as problems such as machine translation and speech recognition have variable length inputs that are known a-priori. For example, in machine translation, an AI model has to be able to translate sentences of any length - this does not fit well with the fix length input requirement of conventional neural networks. <br>
 
-	 	To that end, Seq2Seq models were introduced by Sutskever et al to tackle this problem. Seq2Seq models are neural networks that takes in a variable length sequence as input, and outputs another variable length sequence.
+	 	To that end, Seq2Seq models were introduced by Sutskever et al to tackle this problem. Seq2Seq models are neural networks that takes in a variable length sequence as input, and outputs another variable length sequence. <br>
 
-	 	At its core, Seq2Seq models consist of an <b>Encoder</b> and a <b>Decoder</b> component. The role of the Encoder is to learn a compressed representation of the input sequences. This compressed representation is also known as the <b>context vector</b>. The decoder then picks up this context vector, and outputs a sequence.
+	 	At its core, Seq2Seq models consist of an <b>Encoder</b> and a <b>Decoder</b> component. The role of the Encoder is to learn a compressed representation of the input sequences. This compressed representation is also known as the <b>context vector</b>. The decoder then picks up this context vector, and outputs a sequence. <br>
 
-	 	To solidify our understand, let's take a closer look at how Seq2Seq models uses the encoder and decoder to translate a sentence from english to chinese.
+	 	To solidify our understand, let's take a closer look at how Seq2Seq models uses the encoder and decoder to translate a sentence from english to chinese. <br>
 
-	 	Looking at the diagram below, the input to the model is the english sentence 'How are you'. The encoder processes the sentence word by word, until it reaches the end of the sentence. The &lt;EOS&gt; tag is a special tag that informs the encoder that the end of the sentence has been reached. Once the encoder sees the &lt;EOS&gt; tag, the encoder outputs the context vector.
+	 	Looking at the diagram below, the input to the model is the english sentence 'How are you'. The encoder processes the sentence word by word, until it reaches the end of the sentence. The &lt;EOS&gt; tag is a special tag that informs the encoder that the end of the sentence has been reached. Once the encoder sees the &lt;EOS&gt; tag, the encoder outputs the context vector. <br>
 
-	 	The context vector contains the compressed representation of the input sentence. The decoder now reads the context vector, and begins to produce the output sequence word by word. Again, the &lt;EOS&gt; tag is used to denote the end of the output sequence. The decoder ends when it outputs the &lt;EOS&gt; tag.
+	 	The context vector contains the compressed representation of the input sentence. The decoder now reads the context vector, and begins to produce the output sequence word by word. Again, the &lt;EOS&gt; tag is used to denote the end of the output sequence. The decoder ends when it outputs the &lt;EOS&gt; tag. <br>
 
-	 	<img src='seq2seq.png'>
+	 	<img src= 'assets/img/seq2seq.png'>
 
 	 	<div>
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
