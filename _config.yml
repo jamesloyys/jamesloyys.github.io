@@ -3,7 +3,7 @@ remote_theme: jamesloyys/flexible-jekyll
 # Author Settings
 author: James Loy # add your name
 author-img: james.jpg # add your photo
-about-author: Data Scientist from Singapore &#x1F1F8;&#x1F1EC; Writes about machine learning and deep learning in a visual manner # add description
+about-author: Data Scientist from Singapore. Writes about machine learning and deep learning in a visual manner. # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: jamesloyys # add your Github handle
