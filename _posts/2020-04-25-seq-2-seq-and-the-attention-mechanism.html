@@ -1287,7 +1287,7 @@ tags: [Deep Learning, NLP]
 		// 			})
 
 		function setOpacity(i) {
-			d3.csv("../assets/attention_data.csv", function(data) {
+			d3.csv("/assets/attention_data.csv", function(data) {
 				d3.select("#a1"+i).attr('opacity', data[i-1].w1*100)			
 				d3.select("#a2"+i).attr('opacity', data[i-1].w2*100)			
 				d3.select("#a3"+i).attr('opacity', data[i-1].w3*100)			
